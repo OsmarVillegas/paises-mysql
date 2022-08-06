@@ -1,0 +1,33 @@
+###
+GET http://localhost:3000/paises
+
+###
+POST http://localhost:3000/paises
+Content-Type: application/json
+
+{
+    "nombre":"Inglaterra",
+    "capital":"Londres",
+    "poblacion": 20002123,
+    "moneda":"Libra",
+    "continente": "Europa"
+}
+
+###
+DELETE http://localhost:3000/paises/2
+
+###
+GET http://localhost:3000/paises/1
+
+###
+PUT http://localhost:3000/paises/1
+Content-Type: application/json
+
+{
+
+    "nombre":"México",
+    "capital":"Ciudad de México",
+    "poblacion": 120000000,
+    "moneda":"Peso",
+    "continente": "America"
+}
